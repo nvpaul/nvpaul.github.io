@@ -16,14 +16,14 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 
 .parallax {
 	/* Image Used */
-	background-image: url('../img/Kinderdijk_Background.jpg');
+	background-image: url('../img/Kinderdijk_Background.JPG');
 	 /* Full height */
 	min-height: 100%; 
 }	
 
 .parallax2 {
 	/* Image Used */
-	background: url('../img/Kinderdijk_Divider.jpg');
+	background: url('../img/Kinderdijk_Divider.JPG');
 	/* Photo Size */
 	min-height: 200px;
 }
