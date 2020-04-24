@@ -1,0 +1,369 @@
+/* General Formatting */
+
+body, html {
+		height: 100%;
+		background-color: #fbfbfb;
+}
+
+p {
+	font-family: 'Lato', sans-serif;	
+}
+
+/* Parallax Scrolling Effect 
+Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
+///////////////////////////////
+*/
+
+.parallax {
+	/* Image Used */
+	background-image: url('../img/Kinderdijk_Background.jpg');
+	 /* Full height */
+	min-height: 100%; 
+}	
+
+.parallax2 {
+	/* Image Used */
+	background: url('../img/Kinderdijk_Divider.jpg');
+	/* Photo Size */
+	min-height: 200px;
+}
+
+.parallax, .parallax2 {
+	position: relative;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Turn off parallax scrolling for all tablets and phones.*/
+@media only screen and (max-device-width: 1366px) {
+  .parallax, .parallax2 {
+    background-attachment: scroll;
+  }
+}
+
+/* Welcome
+///////////////////////////////
+*/
+/*.indexBorder {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: auto;
+	margin: 1em;
+	padding: 1em;
+	outline: 5px solid #fbfbfb;
+	outline-offset: -5px;
+	text-align: center;
+}*/
+
+.Welcome {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: auto;
+	margin: 1em;
+	padding: 1em;
+	outline: 5px solid #fbfbfb;
+	outline-offset: -5px;	
+	text-align: center;
+}
+
+.WelcomeText {
+	font-family: 'Indie Flower', cursive;
+	font-size: 2.5em;
+	color: #fbfbfb;
+	line-height: 1em;
+}
+
+.WelcomeName {
+	font-family: 'Indie Flower', cursive;
+	font-size: 4em;
+	color: #fbfbfb;
+}
+
+.WelcomeEllipse {
+	font-family: 'Indie Flower', cursive;
+	font-size: 4em;
+	color: #fbfbfb;
+	line-height: 0;
+}
+
+/* Profile
+///////////////////////////////
+*/
+.container {
+	width: 100%;
+}
+
+.Profile {
+	width: 100%;
+	padding: 1em;
+	display: table;
+	background-color: #fbfbfb;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.ProfilePic {
+	float: left;
+	width: 40%;
+	padding: 1em;
+	min-height: 480px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.ProfileContent {
+	float: left;
+	width: 60%;
+	padding: 1em;
+	min-height: 480px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.ResponsiveRow:after {
+	content: "";
+	clear: both;
+}
+
+.SectionTitle {
+	font-family: 'Indie Flower', cursive;
+	font-size: 4em;
+	color: #323C3C;
+	text-align: center;
+	line-height: 1em;
+}
+
+.SectionUnderline {
+	width: 5em;
+	border-top: 0.1em solid #BEBFB0;
+}
+
+
+.avatar {
+	width: 80%;
+	border-radius: 50%;
+	vertical-align: middle;
+	display: table-cell;
+	margin: auto;
+}
+
+.ImgSm {
+	display: none;
+}
+
+.details {
+	text-align: center;
+}
+
+.highlight {
+	font-weight: 800;
+	color: #a78d64;
+}
+
+.highlightLink:hover {
+	color: #323c3c;
+}
+
+@media (max-width: 1300px) {
+	.ProfilePic {
+		width: 100%;
+		min-height: 0;
+	}
+	
+	.ProfileContent{
+		width: 100%;
+		min-height: 0;
+	}
+	
+	.ImgSm {
+		display: table-cell;
+	}
+	
+	.ImgLg {
+		display: none;
+	}
+	
+	.avatar {
+		width: 18em;
+		height: 18em;
+	}
+	
+	.Profile .content {
+		padding: 0;
+		margin: 0;
+	}
+}	
+
+/* Resume
+///////////////////////////////
+*/
+
+.Resume {
+	padding: 1em;
+	padding-top: 2em;
+	width: 100%;
+	position: relative;
+	background-color: #2e373d;
+}
+
+.SectionTitleDark {
+	font-family: 'Indie Flower', cursive;
+	font-size: 4em;
+	color: #BEBFB0;
+	text-align: center;
+	line-height: 1em;
+}
+	
+.SectionSubTitleDark {
+	font-family: 'Indie Flower', cursive;
+	font-size: 2em;
+	color: #BEBFB0;
+	line-height: 1em;
+	width: 100%;
+}
+
+.Dark {
+	font-family: 'Lato', sans-serif;
+	color: #fbfbfb;
+}
+
+/* Work Experience Timeline
+// Reference: https://codepen.io/chriswrightdesign/pen/XJzNBN/ 
+*/
+
+.line {
+	display: inline-block;
+}
+
+.JobTitle {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+	color: #fbfbfb;	
+}
+
+.JobCompany {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+	color: #fbfbfb;	
+	font-style: italic;
+}
+
+.JobDates {
+	font-family: 'Lato', sans-serif;
+	font-size: 0.8em;
+	color: #bebfbd;	
+	opacity: 0.8;
+	font-style: italic;
+	float: right;
+}
+
+.VolunteerTitle {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+	color: #fbfbfb;	
+}
+
+
+.VolunteerCompany {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+	color: #fbfbfb;	
+	font-style: italic;
+}
+
+.VolunteerDates {
+	font-family: 'Lato', sans-serif;
+	font-size: 0.8em;
+	color: #bebfbd;	
+	opacity: 0.8;
+	font-style: italic;
+}
+
+.JobDescription {
+	font-family: 'Lato', sans-serif;
+	color: #fbfbfb;		
+}
+
+.highlightDark {
+	font-weight: 800;
+	color: #BEBFB0;
+}
+
+.highlightSkill {
+	font-weight: 800;
+	color: #2e373d;
+	background-color: #BEBFB0;
+	padding: 8px 12px;
+	border-radius: 4px;
+	border: solid 1px #BEBFB0;
+	line-height: 2.7em;
+}
+
+/* Learn More
+///////////////////////////////
+*/
+
+.ResumeLinks {
+	padding: 1em;
+	padding-top: 2em;
+	position: relative;
+	background-image: url('../img/City_Bird.jpg');
+	background-size: cover;
+	min-height: 100%;
+}
+
+.ResLink {
+	color: #2e373d;
+	font-weight: 800;
+}
+
+.LinkButton {
+	width: 18em;
+	height: 6em;
+	border-radius: 10px;
+	background-color: transparent;
+	border-color: #2e373d;
+	padding: 2em;
+	margin: 1em;
+	color: #2e373d;
+	font-weight: 800;	
+}
+
+.LinkButton:hover {
+	background-color: #2e373d;
+	border-color: #2e373d;
+	color: #fbfbfb;		
+}
+
+.LinkButton:hover .ResLink {
+	color: #fbfbfb;	
+}
+
+.ResLink:hover {
+	text-decoration: none;
+}
+
+.btnGroup {
+	text-align: center;
+}
+
+
+
+
+
+/* Font Options
+///////////////////////////////
+font-family: 'Lato', sans-serif;
+font-family: 'Indie Flower', cursive;
+*/
