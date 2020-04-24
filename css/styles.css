@@ -318,7 +318,7 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 	padding: 1em;
 	padding-top: 2em;
 	position: relative;
-	background-image: url('../img/City_Bird.jpg');
+	background-image: url('../img/City_Bird.JPG');
 	background-size: cover;
 	min-height: 100%;
 }
