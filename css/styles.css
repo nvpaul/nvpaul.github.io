@@ -357,6 +357,7 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 
 .PortfolioImg {
 	width: 100%;
+	max-width: 500px;
 	padding: 1em;
 }
 
