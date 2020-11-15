@@ -195,14 +195,19 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 	}
 	
 	.avatar {
-		width: 18em;
-		height: 18em;
+		width: 14em;
+		height: 14em;
 	}
 	
 	.Profile .content {
 		padding: 0;
 		margin: 0;
 	}
+	
+	.SectionTitle {
+		font-size: 3em;
+	}
+
 }	
 
 /* Resume
@@ -237,6 +242,12 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 	font-family: 'Lato', sans-serif;
 	color: #fbfbfb;
 }
+
+@media (max-width: 1300px) {
+	.SectionTitleDark {
+		font-size: 3em;
+	}
+}	
 
 /* Work Experience Timeline
 // Reference: https://codepen.io/chriswrightdesign/pen/XJzNBN/ 
@@ -300,6 +311,10 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 	color: #BEBFB0;
 }
 
+.highlightDarkLink:hover {
+	color: #fbfbfb;
+}
+
 .highlightSkill {
 	font-weight: 800;
 	color: #2e373d;
@@ -310,55 +325,76 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 	line-height: 2.7em;
 }
 
-/* Learn More
+/* Portfolio
 ///////////////////////////////
 */
 
-.ResumeLinks {
+.Portfolio {
 	padding: 1em;
 	padding-top: 2em;
 	position: relative;
-	background-image: url('../img/City_Bird.JPG');
+	background-image: url('../img/City_Background.JPG');
 	background-size: cover;
 	min-height: 100%;
 }
 
-.ResLink {
-	color: #2e373d;
+.SectionSubTitle {
+	font-family: 'Indie Flower', cursive;
+	font-size: 2em;
+	color: #323C3C;
+	line-height: 1em;
+	width: 100%;
+}
+
+.PortfolioDescription {
+	font-family: 'Lato', sans-serif;
+}
+
+.PortfolioItem {
+	background-color: #fbfbfb;
+	padding: 1em;
+}
+
+.PortfolioImg {
+	width: 100%;
+	padding: 1em;
+}
+
+/* Contact
+///////////////////////////////
+*/
+.Contact {
+	padding: 1em;
+	padding-top: 2em;
+	width: 100%;
+	position: relative;
+	background-color: #2e373d;
+}
+
+.fas, .fab {
+	font-family: 'Lato', sans-serif;
+	color: #BEBFB0;
+	font-size: 2em;
+	vertical-align: middle;
+}
+
+.contactInfo {
+	font-family: 'Lato', sans-serif;
+	color: #FBFBFB;
+	font-size: 1em;
+	vertical-align: middle;
+	line-height: 2em;
+}
+
+.contactLink {
+	font-family: 'Lato', sans-serif;
+	color: #FBFBFB;
+}
+
+.contactLink:hover {
+	color: #BEBFB0;
 	font-weight: 800;
 }
-
-.LinkButton {
-	width: 18em;
-	height: 6em;
-	border-radius: 10px;
-	background-color: transparent;
-	border-color: #2e373d;
-	padding: 2em;
-	margin: 1em;
-	color: #2e373d;
-	font-weight: 800;	
-}
-
-.LinkButton:hover {
-	background-color: #2e373d;
-	border-color: #2e373d;
-	color: #fbfbfb;		
-}
-
-.LinkButton:hover .ResLink {
-	color: #fbfbfb;	
-}
-
-.ResLink:hover {
-	text-decoration: none;
-}
-
-.btnGroup {
-	text-align: center;
-}
-
-
 
 
 
