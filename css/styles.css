@@ -28,7 +28,14 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 	min-height: 200px;
 }
 
-.parallax, .parallax2 {
+.parallax3 {
+	/* Image Used */
+	background: url('../img/City_Background.JPG');
+	/* Photo Size */
+	min-height: 100%;	
+}
+
+.parallax, .parallax2, .parallax3 {
 	position: relative;
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
@@ -39,7 +46,7 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 
 /* Turn off parallax scrolling for all tablets and phones.*/
 @media only screen and (max-device-width: 1366px) {
-  .parallax, .parallax2 {
+  .parallax, .parallax2, .parallax3 {
     background-attachment: scroll;
   }
 }
@@ -330,12 +337,16 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 */
 
 .Portfolio {
-	padding: 1em;
+/* 	padding: 1em;
 	padding-top: 2em;
 	position: relative;
 	background-image: url('../img/City_Background.JPG');
 	background-size: cover;
-	min-height: 100%;
+	min-height: 100%; */
+	width: 100%;
+	padding: 1em;
+	display: table;
+	background-color: #fbfbfb;
 }
 
 .SectionSubTitle {
@@ -350,39 +361,69 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 	font-family: 'Lato', sans-serif;
 }
 
+.PortfolioStatus {
+	font-family: 'Lato', sans-serif;
+	font-size: .75em;
+	font-style: italic;
+	line-height: 1em;
+}
+
 .PortfolioItem {
-	background-color: #fbfbfb;
 	padding: 1em;
+	padding-bottom: 2em;
+}
+
+.PortfolioItemCard {
+	background-color: #BEBFB0;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	padding: 1em;	
+}
+
+.PortfolioItemCard:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .PortfolioImg {
-	width: 100%;
-	max-width: 500px;
-	padding: 1em;
+/* Ensure aspect ration 4:3 */
+	width: 90%;
+	padding-top: 1em;
+	display: block;
+	margin: 0 auto;
 }
 
 /* Contact
 ///////////////////////////////
 */
 .Contact {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: auto;
+	margin: 1em;
 	padding: 1em;
-	padding-top: 2em;
-	width: 100%;
-	position: relative;
-	background-color: #2e373d;
+	outline: 5px solid #fbfbfb;
+	outline-offset: -5px;	
+	text-align: center;
 }
 
 .fas, .fab {
 	font-family: 'Lato', sans-serif;
-	color: #BEBFB0;
-	font-size: 2em;
+	color: #323C3C;
+	font-size: 4em;
 	vertical-align: middle;
+}
+
+.contactRow {
+	display: block;
+	margin: 0 auto;
 }
 
 .contactInfo {
 	font-family: 'Lato', sans-serif;
 	color: #FBFBFB;
-	font-size: 1em;
+	font-size: 3em;
 	vertical-align: middle;
 	line-height: 2em;
 }
@@ -390,6 +431,7 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 .contactLink {
 	font-family: 'Lato', sans-serif;
 	color: #FBFBFB;
+	padding: 1em;
 }
 
 .contactLink:hover {
