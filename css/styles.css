@@ -415,6 +415,12 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 	vertical-align: middle;
 }
 
+.fas:hover, .fab:hover {
+	-webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+
 .contactRow {
 	display: block;
 	margin: 0 auto;
@@ -438,7 +444,6 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 	color: #BEBFB0;
 	font-weight: 800;
 }
-
 
 
 /* Font Options
