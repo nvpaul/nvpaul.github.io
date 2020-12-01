@@ -1,8 +1,8 @@
 /* General Formatting */
 
 body, html {
-		height: 100%;
-		background-color: #fbfbfb;
+	height: 100%;
+	background-color: #fbfbfb;
 }
 
 p {
@@ -35,7 +35,21 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 	min-height: 100%;	
 }
 
-.parallax, .parallax2, .parallax3 {
+.parallaxMinerva {
+	/* Image Used */
+	background-image: url('../img/Sky_Background.JPG');
+	/* Photo Size */
+	min-height: 100%;
+}
+
+.parallaxDivider {
+	/* Image Used */
+	background: url('../img/Kinderdijk_Divider_Dark.JPG');
+	/* Photo Size */
+	min-height: 200px;	
+}
+
+.parallax, .parallax2, .parallax3, .parallaxMinerva, .parallaxDivider {
 	position: relative;
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
@@ -46,7 +60,7 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 
 /* Turn off parallax scrolling for all tablets and phones.*/
 @media only screen and (max-device-width: 1366px) {
-  .parallax, .parallax2, .parallax3 {
+  .parallax, .parallax2, .parallax3, .parallaxMinerva, .parallaxDivider {
     background-attachment: scroll;
   }
 }
@@ -74,7 +88,6 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 	left: 0;
 	bottom: 0;
 	right: 0;
-	overflow: auto;
 	margin: 1em;
 	padding: 1em;
 	outline: 5px solid #fbfbfb;
@@ -379,9 +392,9 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 	padding: 1em;	
 }
 
-.PortfolioItemCard:hover {
+/*.PortfolioItemCard:hover {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+}*/
 
 .PortfolioImg {
 /* Ensure aspect ration 4:3 */
@@ -389,6 +402,213 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 	padding-top: 1em;
 	display: block;
 	margin: 0 auto;
+}
+
+.PortfolioLink {
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.2em;
+	color: #323C3C;
+	line-height: 1em;
+}
+
+.PortfolioLink:hover {
+	text-decoration: underline;
+	color: #323C3C;
+}
+
+/* Project Details
+///////////////////////////////
+*/
+/* Return Button */
+.FloatButton {
+	position: fixed;
+	width: 100px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
+	background-color: #BEBFB0;
+	color: #2e373d;
+	border-radius: 50px;
+	text-align: center;
+	box-shadow: 0px 6px #999;
+	z-index: 5;
+}
+
+.FloatButton:hover {
+	background-color: #2e373d;
+	color: #BEBFB0;
+}
+
+.FloatButton:active {
+	background-color: #2e373d;
+	color: #BEBFB0;
+	box-shadow: 0 3px #999;
+	transform: translateY(3px);
+}
+
+.my-float{
+	margin-top: 22px;
+}
+
+/* Title */
+.Welcome2 {
+	margin: 1em;
+	padding: 1em;	
+	text-align: center;
+}
+
+.ProjectWelcome {
+	margin: 0 auto;
+	padding-top: 3em;
+	padding: 1em;	
+	text-align: center;
+	max-width: min(80%, 900px);
+}
+
+.ProjectWelcomeText {
+	font-family: 'Indie Flower', cursive;
+	font-size: 4em;
+	color: #fbfbfb;
+	line-height: 1em;
+}
+
+.ProjectWelcomeEllipse {
+	font-family: 'Indie Flower', cursive;
+	font-size: 4em;
+	color: #fbfbfb;
+	line-height: 0;
+}
+
+.ProjectIntro {
+	font-family: 'Lato', sans-serif;
+	color: #fbfbfb;
+	font-size: 1.1em;
+}
+
+/* Empathize */
+.Persona {
+	width: 100%;
+	min-height: 100%;
+	padding: 1em;
+	display: table;
+	background-color: #fbfbfb;
+}
+
+.PersonaContent {
+	text-align: center;
+	margin: 0px auto;
+	padding: 1em;
+}
+
+.avatarPersona {
+	width: 50%;
+	border-radius: 50%;
+	vertical-align: middle;
+	display: table-cell;
+	margin: auto;
+	padding: 1em;
+}
+
+.PersonaName {
+	font-family: 'Indie Flower', cursive;
+	font-size: 2em;
+	color: #323C3C;
+	line-height: 1em;
+	width: 100%;
+}
+
+.PersonaDescription {
+	text-align: center;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+/* Define */
+.Define {
+	padding: 1em;
+	padding-top: 2em;
+	width: 100%;
+	position: relative;
+	background-color: #2e373d;
+	min-height: 100%;
+}
+
+.DefineContent {
+	margin: 0 auto;
+	text-align: center;
+	max-width: min(80%, 900px);
+}
+
+.DefineDescription {
+	padding-top: 1em;
+	font-family: 'Lato', sans-serif;
+	color: #fbfbfb;
+}
+
+.noBullet {
+	list-style-type: none;
+}
+
+.stat {
+	font-size: 1.5em;
+	color: #BEBFB0;
+	font-weight: 1000;
+}
+
+.emphasis {
+	font-weight: 1000;
+	font-size: 1.2em;
+}
+
+.References, .Reference {
+	font-size: 0.8em;
+	text-align: left;
+	color: #BEBFB0;
+}
+
+.Reference:hover {
+	font-size: 0.8em;
+	text-align: left;
+	color: #BEBFB0;
+	text-decoration: underline;
+}
+
+/* Ideate */
+/* Note: This section uses a lot of the emphathize/persona formatting */
+.IdeaSubTopic {
+	font-weight: 1000;
+	text-align: left;
+}
+
+.IdeaContent {
+	text-align: center;
+	margin: 0px auto;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 2em;
+	padding-top: 1em;
+	max-width: 90;
+}
+
+.IdeaDescription {
+	text-align: left;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.bulletIndent {
+	margin-left: 20px;
+}
+
+/* Prototype */
+.Prototype {
+	margin: 1em;
+	padding: 1em;	
+	text-align: center;
+}
+
+.PrototypeDemo {
+	padding-top: 1em;
 }
 
 /* Contact
