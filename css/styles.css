@@ -37,7 +37,7 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 
 .parallaxMinerva {
 	/* Image Used */
-	background-image: url('../img/Sky_Background.JPG');
+	background-image: url('../img/Sky_Background.jpg');
 	/* Photo Size */
 	min-height: 100%;
 }
