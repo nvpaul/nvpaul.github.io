@@ -169,7 +169,6 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 	border-top: 0.1em solid #BEBFB0;
 }
 
-
 .avatar {
 	width: 80%;
 	border-radius: 50%;
@@ -203,7 +202,7 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 
 	.ProfileContent{
 		width: 100%;
-		min-height: 0;
+		min-height: 0;;
 	}
 
 	.ImgSm {
@@ -358,19 +357,26 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 }
 
 .PublicationTitle {
-	font-family: 'Lato';
-	font-size: 1.5em;
-	line-height: 1.5em;
-	color: #323C3C;
+	font-family: 'Lato', sans-serif;
+	color: #fbfbfb;
+	font-size: 2em;
+	line-height: 1em;
 	width: 100%;
+	color: #323C3C;
 }
 
 .PublicationPlace {
 	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
 }
 
 .PublicationCitation {
 	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
 }
 
 .PublicationItem {
@@ -382,6 +388,7 @@ Reference: https://www.w3schools.com/howto/howto_css_parallax.asp
 .referenceLink {
 	font-family: 'Lato', sans-serif;
 	font-style: italic;
+	font-weight: 800;
 	line-height: 1em;
 	color: #a78d64;
 }
